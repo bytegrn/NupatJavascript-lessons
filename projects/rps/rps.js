@@ -36,7 +36,7 @@ function init() {
   computerChoice = rps[Math.floor(Math.random() * 3)];
   playerChoice = parseInt(prompt("Choose a number between 1-3"));
 
-  //   visually indicate what item was selected by the player ot computer
+  //   visually indicate what item was selected by the player or computer
   computerPick.textContent = choices[computerChoice - 1];
   playerPick.textContent = choices[playerChoice - 1];
 
