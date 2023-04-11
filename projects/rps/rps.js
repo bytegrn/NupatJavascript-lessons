@@ -13,7 +13,7 @@ let playerPick = document.querySelector(".left");
 
 const playBtnEl = document.querySelector(".play-btn");
 
-// console.log(rock, paper, scissors);
+// console.log(computerPick, playerPick, playBtnEl);
 
 // Game logic
 
@@ -24,9 +24,13 @@ const playBtnEl = document.querySelector(".play-btn");
  *
  */
 
-playBtnEl.addEventListener("click", () => {
-  init();
-});
+// Arrow function
+// hoisting
+const startGame = () => {
+  init(); //  function call/invocation
+};
+
+playBtnEl.addEventListener("click", startGame);
 
 function init() {
   let computerChoice = null;
@@ -70,7 +74,8 @@ function init() {
         }
         break;
       default:
-        alert("try again");
+        computerChoice === 1;
     }
   }, 1000);
 }
+
